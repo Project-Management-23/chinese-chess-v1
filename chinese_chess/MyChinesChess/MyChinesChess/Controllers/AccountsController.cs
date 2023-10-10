@@ -4,11 +4,11 @@ using WebChineseChess.Models;
 
 namespace WebChineseChess.Controllers
 {
-    public class HomeController : Controller
+    public class AccountsController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<AccountsController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public AccountsController(ILogger<AccountsController> logger)
         {
             _logger = logger;
         }
@@ -18,7 +18,7 @@ namespace WebChineseChess.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult SignUp()
         {
             return View();
         }
