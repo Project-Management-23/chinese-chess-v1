@@ -1,4 +1,4 @@
-namespace MyChinesChess.Models
+namespace WebChineseChess.Models
 {
     public class ErrorViewModel
     {
