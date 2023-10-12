@@ -1,16 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BanCov1.Models;
+using Libs.Entity;
+using Libs.Services;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WebChineseChess.Models;
 
-namespace WebChineseChess.Controllers
+namespace BanCov1.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ChessService chessService)
         {
             _logger = logger;
+            //chessService.InsertRoom(new Room() { Id = Guid.NewGuid(), Name = "Room 1" });
+            //List<Room> roomList = chessService.getRoomList();
+            int x = 0;
         }
 
         public IActionResult Index()
